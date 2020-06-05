@@ -1,0 +1,37 @@
+ <a routerLink="/nyan">preload</a> 
+<div>
+
+  <div style="padding-top: 30px">
+    {{convertText | lowercase}}
+  </div>
+
+  <div style="padding-top: 30px">
+    {{convertText | uppercase}}
+  </div>
+</div>
+
+<div style="text-align:center">
+      <h3> Currency Pipe</h3>
+      <p>{{ itemPrice | currency:'USD' }}</p>      
+      <p>{{ itemPrice | currency:'EUR'}}</p>
+      <p>{{ itemPrice | currency:'INR' }}</p>
+</div>
+
+<!-- <div style="text-align:center">
+      <h3>Date Pipe</h3>
+      <p>{{ currentDate | date:'fullDate' }}<p>      
+      <p>{{ numDateFormat | date:'medium' }}<p>
+      <p>{{ getYear | date:'yy' }}<p>
+      <p>{{ getTime | date:'Hm' }}<p>
+</div>
+ -->
+<!--<div style="text-align:center">
+	 <h3>JSON Pipe</h3>
+	{{customers|json}}
+</div> -->
+
+<!-- custom pipes -->
+<!-- <div style="text-align:center">
+  <p> Word Counter Pipe in action below</p>
+  <h1>{{ convertText | wordcount }}</h1>
+</div>--> 
